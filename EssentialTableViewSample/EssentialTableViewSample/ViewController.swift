@@ -33,7 +33,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("#2", #function, indexPath.row)
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "switchCell", for: indexPath)
         
         cell.textLabel?.text = "\(indexPath.section) - \(indexPath.row)"
         
